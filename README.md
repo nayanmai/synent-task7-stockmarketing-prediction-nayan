@@ -9,40 +9,16 @@ An end-to-end time series analysis and forecasting project examining historical 
 
 ---
 
-## 🚀 Project Overview
+## 👩‍💻 Project Header
 
-Financial time series data are inherently non-stationary and prone to high volatility clustering. This repository implements a rigorous analytical workflow in **Google Colab** using Python to dissect price movements, smooth out noise, and generate statistical insights.
-
-### Key Objectives:
-* **Trend Analysis:** Smoothing high-frequency noise using Moving Averages (50-Day and 200-Day SMA).
-* **Seasonality & Decomposition:** Isolating trend, seasonal, and residual components.
-* **Risk & Volatility Analysis:** Calculating daily percentage returns, return distributions, and annualized 30-day rolling volatility.
-* **Predictive Forecasting:** Building and projecting future prices via an AutoRegressive Integrated Moving Average (ARIMA) model.
-* **Statistical Summary:** Tabulating performance metrics, including total return, maximum daily gain/loss, and trade proportions.
+* **Student Name:** Nandita Manna  
+* **Level:** Advanced Level (Task 7)  
+* **Tools Used:** Python (pandas, numpy, matplotlib, statsmodels, yfinance), Google Colab  
+* **Output:** Time-based Trends, Seasonality Decomposition, Volatility Analysis, & Predictive Forecasts  
 
 ---
 
-## 🛠️ Tech Stack & Libraries
-
-* **Data Retrieval & Manipulation:** `yfinance`, `pandas`, `numpy`
-* **Statistical Modeling:** `statsmodels` (ARIMA, Seasonal Decomposition)
-* **Data Visualization:** `matplotlib`, `seaborn`
-* **Development Environment:** `Google Colab` (`.ipynb`)
-
----
-
-## 📊 Analytical Pipeline & Visualizations
-
-1. **Moving Average Crossovers:** Evaluates medium-term vs. long-term market momentum.
-2. **Time Series Decomposition:** Additive breakdown of trend, weekly/yearly periodicity, and noise residuals.
-3. **Daily Returns & KDE Distribution:** Explores return skewness and kurtosis.
-4. **Annualized Rolling Volatility:** Highlights periods of high market turbulence with gradient fill styling.
-5. **Trading Days Pie Chart:** Classifies proportion of positive, negative, and flat trading sessions.
-6. **ARIMA Price Forecasting:** Projects a 30-day forward trend based on historical autoregression.
-
----
-
-## 📈 Summary Performance Metrics
+## 📊 Summary Performance Metrics
 
 | Metric | Value |
 | :--- | :--- |
@@ -55,9 +31,39 @@ Financial time series data are inherently non-stationary and prone to high volat
 
 ---
 
+## 📉 Visualizations & Analytical Breakdown
+
+### 1. Stock Price Trend Analysis & Moving Averages
+Smooths high-frequency noise using 50-day and 200-day Simple Moving Averages to track structural momentum shifts.
+<!-- Replace path with your actual image path after uploading to GitHub -->
+![Moving Averages Trend](assets/trend_ma.png)
+
+### 2. Time Series Decomposition
+Deconstructs the historical stock prices into core components: Trend, Seasonality, and Residual noise.
+<!-- Replace path with your actual image path -->
+![Decomposition](assets/decomposition.png)
+
+### 3. Daily Returns & Return Distribution
+Analyzes day-over-day percentage changes alongside Kernel Density Estimation (KDE) to inspect market skewness.
+<!-- Replace path with your actual image path -->
+![Returns Distribution](assets/returns_dist.png)
+
+### 4. Rolling Volatility Analysis (Annualized)
+Tracks market turbulence dynamically over a 30-day sliding window.
+<!-- Replace path with your actual image path -->
+![Rolling Volatility](assets/volatility.png)
+
+### 5. ARIMA Price Forecasting
+Projects a 30-business-day forward prediction path based on historical autoregressive patterns.
+<!-- Replace path with your actual image path -->
+![ARIMA Forecast](assets/arima_forecast.png)
+
+---
+
 ## 📂 Repository Structure
 
 ```text
+├── assets/                                            # Directory for output graphs & visual exports
 ├── stock-market-analysis-prediction-using-lstm.ipynb  # Core LSTM & Time Series Notebook
 ├── Task7nayan.ipynb                                   # Primary Analysis & Visualization Script
 └── README.md                                          # Project Documentation
