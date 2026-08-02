@@ -34,42 +34,54 @@ An end-to-end time series analysis and forecasting project examining historical 
 
 Below are the key analytical charts and visual models generated during the time series analysis of Apple Inc. (AAPL) stock data:
 
-| # | Visual Description | Target Chart / Placeholder |
-| :--- | :--- | :--- |
-| **1** | **Stock Price Trend Analysis & Moving Averages**<br>*(Tracks 50-day and 200-day simple moving averages against daily close prices)* | `![Moving Averages 
-| **2** | **Time Series Decomposition**<br>*(Deconstructs price series into Trend, Seasonal, and Residual components)* | `![Decomposition](assets/decomposition.png)` |
-| **3** | **Daily Returns & KDE Distribution**<br>*(Examines day-over-day percentage changes and return density distribution)* | `![Returns Distribution](assets/returns_dist.png)` |
-| **4** | **Rolling Volatility Analysis (Annualized)**<br>*(Measures 30-day rolling market turbulence with a filled area gradient)* | `![Rolling Volatility](assets/volatility.png)` |
-| **5** | **ARIMA Price Forecasting**<br>*(Projects a 30-business-day forward prediction path)* | `![ARIMA Forecast](assets/arima_forecast.png)` |
-| **6** | **Trading Days Proportions (Pie Chart)**<br>*(Classifies the breakdown of positive, negative, and flat trading sessions)* | `![Trading Days Pie Chart](assets/trading_pie.png)` |
 
-## 📉 Visualizations & Analytical Breakdown
 
 ### 1. Stock Price Trend Analysis & Moving Averages
-Smooths high-frequency noise using 50-day and 200-day Simple Moving Averages to track structural momentum shifts.
-<!-- Replace path with your actual image path after uploading to GitHub -->
-![Moving Averages Trend](assets/trend_ma.png)
+Image Name / File Concept: Moving Averages Trend / stock_trend_ma.png
 
-### 2. Time Series Decomposition
-Deconstructs the historical stock prices into core components: Trend, Seasonality, and Residual noise.
-<!-- Replace path with your actual image path -->
-![Decomposition](assets/decomposition.png)
+Visual Representation: (Screenshot 2026-08-02 234743.png)
 
-### 3. Daily Returns & Return Distribution
-Analyzes day-over-day percentage changes alongside Kernel Density Estimation (KDE) to inspect market skewness.
-<!-- Replace path with your actual image path -->
-![Returns Distribution](assets/returns_dist.png)
+Description: This chart plots the daily closing stock price (light blue line) alongside a 50-Day Simple Moving Average (orange line) and a 200-Day Simple Moving Average (red line) over a multi-year period (2023–2026). It smooths out high-frequency market noise to help identify major structural momentum shifts, trend reversals, and support/resistance crossings.
 
-### 4. Rolling Volatility Analysis (Annualized)
-Tracks market turbulence dynamically over a 30-day sliding window.
-<!-- Replace path with your actual image path -->
-![Rolling Volatility](assets/volatility.png)
+## 2. Time Series Decomposition
+Image Name / File Concept: Decomposition / time_series_decomposition.png
 
-### 5. ARIMA Price Forecasting
-Projects a 30-business-day forward prediction path based on historical autoregressive patterns.
-<!-- Replace path with your actual image path -->
-![ARIMA Forecast](assets/arima_forecast.png)
+Visual Representation: (Screenshot 2026-08-02 234752.png & 234845.png)
 
+Description: This multi-panel analytical graph breaks down the historical stock pricing data into its fundamental components:
+
+Observed: The raw historical stock price series.
+
+Trend: The underlying long-term progression free of seasonal and random fluctuations.
+
+Seasonal: The repeating cyclical patterns or regular periodic variations over time.
+
+Residual (Resid): The irregular, random noise or leftover variance remaining after removing trend and seasonality.
+
+
+## 3. Daily Returns & Return Distribution
+Image Name / File Concept: Returns Distribution / daily_returns_distribution.png
+
+Visual Representation: (Screenshot 2026-08-02 234917.png)
+
+Description: Presented in a dual-panel layout:
+
+Daily Percentage Returns (Left): Tracks day-over-day percentage changes, highlighting volatility spikes, market shocks, and outlier gain/loss days (such as the sharp drop/spike near early 2025).
+
+Distribution of Daily Returns (Right): Combines a frequency histogram with a Kernel Density Estimation (KDE) curve (yellow line) to inspect market skewness, kurtosis, and the concentration of typical daily price shifts around zero.
+## 4. Rolling Volatility Analysis (Annualized)
+Image Name / File Concept: Rolling Volatility / rolling_volatility.png
+
+Visual Representation: (Screenshot 2026-08-02 234929.png & 234923.png)
+
+Description: Evaluates market turbulence dynamically by calculating a 30-day sliding window of annualized standard deviation on returns. The line graph highlights calm accumulation phases alongside sharp volatility spikes (notably soaring near mid-2025), illustrating periods of heightened risk and market uncertainty.
+
+## 5. ARIMA Price Forecasting
+Image Name / File Concept: ARIMA Forecast / arima_forecast.png
+
+Visual Representation: (Screenshot 2026-08-02 234854.png & 234800.png)
+
+Description: Projects a future trajectory using autoregressive modeling. It contrasts historical closing prices (solid blue line) against a 30-business-day forward prediction path (dashed or solid green line), modeling short-term expectations based on historical lag patterns and moving average parameters.
 ---
 
 ## 📂 Repository Structure
