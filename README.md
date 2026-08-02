@@ -30,6 +30,18 @@ An end-to-end time series analysis and forecasting project examining historical 
 | **Max Daily Loss** | -9.25% |
 
 ---
+# 📈 Visualizations & Analytical Breakdown
+
+Below are the key analytical charts and visual models generated during the time series analysis of Apple Inc. (AAPL) stock data:
+
+| # | Visual Description | Target Chart / Placeholder |
+| :--- | :--- | :--- |
+| **1** | **Stock Price Trend Analysis & Moving Averages**<br>*(Tracks 50-day and 200-day simple moving averages against daily close prices)* | `![Moving Averages 
+| **2** | **Time Series Decomposition**<br>*(Deconstructs price series into Trend, Seasonal, and Residual components)* | `![Decomposition](assets/decomposition.png)` |
+| **3** | **Daily Returns & KDE Distribution**<br>*(Examines day-over-day percentage changes and return density distribution)* | `![Returns Distribution](assets/returns_dist.png)` |
+| **4** | **Rolling Volatility Analysis (Annualized)**<br>*(Measures 30-day rolling market turbulence with a filled area gradient)* | `![Rolling Volatility](assets/volatility.png)` |
+| **5** | **ARIMA Price Forecasting**<br>*(Projects a 30-business-day forward prediction path)* | `![ARIMA Forecast](assets/arima_forecast.png)` |
+| **6** | **Trading Days Proportions (Pie Chart)**<br>*(Classifies the breakdown of positive, negative, and flat trading sessions)* | `![Trading Days Pie Chart](assets/trading_pie.png)` |
 
 ## 📉 Visualizations & Analytical Breakdown
 
