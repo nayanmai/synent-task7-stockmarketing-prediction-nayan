@@ -307,9 +307,11 @@ This project demonstrates how **Time Series Analysis** can transform historical 
 
 Aspiring Data Analyst | Python Developer | Machine Learning Enthusiast
 
-📧 Email: *maity2nayan@gmail.com*
+**📧 Email:** maity2nayan@gmail.com
 
-🔗 LinkedIn: *linkedin.com/in/nayan-maity-it-workers*
+**🔗 LinkedIn:** https://linkedin.com/in/nayan-maity-it-workers
+
+**💻 GitHub:** https://github.com/nayanmai
 
 ---
 
