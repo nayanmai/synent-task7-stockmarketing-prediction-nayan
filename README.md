@@ -34,6 +34,14 @@ An end-to-end **Time Series Analysis and Forecasting** project that analyzes his
 - Financial Performance Metrics
 
 ---
+# 🎥 Project Demonstration
+
+📺 **Watch the Project Demo**
+<img width="1905" height="1060" alt="Screenshot 2026-08-03 091037" src="https://github.com/user-attachments/assets/d6217159-5ce3-43bb-8c19-be8a48762def" />
+<img width="1872" height="1038" alt="Screenshot 2026-08-03 091013" src="https://github.com/user-attachments/assets/c05a2397-ad99-44ea-b976-785909e19650" />
+<img width="1875" height="1058" alt="Screenshot 2026-08-03 091050" src="https://github.com/user-attachments/assets/2c03a291-30f4-4bbd-b19a-13d7598ed4ee" />
+
+▶️ [Click here to watch the project demonstration](assets/stockmarketprediction_Project_Demo.mp4)
 
 # 🎯 Problem Statement
 
