@@ -13,7 +13,7 @@ An end-to-end **Time Series Analysis and Forecasting** project that analyzes his
 
 **Student Name:** Nayan Maity
 
-**Level:**Intermediate Level(Task 7)
+**Level:** Intermediate Level(Task 7)
 
 **Tools Used:**
 - Python
