@@ -5,89 +5,314 @@
 ![Statsmodels](https://img.shields.io/badge/Statsmodels-Time%20Series-orange)
 ![Google Colab](https://img.shields.io/badge/Google%20Colab-Environment-F9AB00?logo=googlecolab&logoColor=white)
 
-An end-to-end time series analysis and forecasting project examining historical stock market data for **Apple Inc. (AAPL)** from 2023 to 2026. This project extracts market trends, breaks down seasonality components, measures risk via rolling volatility, maps trading day distributions, and projects future prices using an **ARIMA** model.
+An end-to-end **Time Series Analysis and Forecasting** project that analyzes historical stock prices of **Apple Inc. (AAPL)** using statistical techniques and predictive modeling. The project identifies market trends, decomposes seasonal components, measures market volatility, visualizes trading behavior, and forecasts future stock prices using the **ARIMA** model.
 
 ---
 
-## 👩‍💻 Project Header
+# 👩‍💻 Project Header
 
-* **Student Name:** Nandita Manna  
-* **Level:** Advanced Level (Task 7)  
-* **Tools Used:** Python (pandas, numpy, matplotlib, statsmodels, yfinance), Google Colab  
-* **Output:** Time-based Trends, Seasonality Decomposition, Volatility Analysis, & Predictive Forecasts  
+**Student Name:** Nayan Maity
+
+**Level:** Advanced Level (Task 7)
+
+**Tools Used:**
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Statsmodels
+- yfinance
+- Google Colab
+
+**Project Output**
+- Trend Analysis
+- Moving Average Analysis
+- Seasonality Decomposition
+- Volatility Analysis
+- Daily Return Analysis
+- ARIMA Forecasting
+- Financial Performance Metrics
 
 ---
 
-## 📊 Summary Performance Metrics
+# 🎯 Problem Statement
+
+Financial markets generate large volumes of sequential data that continuously change over time. Traditional analytical techniques cannot effectively capture hidden temporal patterns, long-term trends, seasonality, or market volatility.
+
+The objective of this project is to perform comprehensive time series analysis on Apple Inc. (AAPL) historical stock prices to:
+
+- Analyze long-term market trends.
+- Detect seasonal behavior.
+- Measure stock volatility.
+- Forecast future stock prices.
+- Generate meaningful visual insights for financial decision-making.
+
+---
+
+# 📊 Dataset Details
+
+**Dataset Source:** Yahoo Finance
+
+**API Used:** `yfinance`
+
+**Company:** Apple Inc. (AAPL)
+
+**Time Period:**
+
+- Start Date: January 2023
+- End Date: January 2026
+
+### Features Used
+
+- Date
+- Open
+- High
+- Low
+- Close
+- Adjusted Close
+- Volume
+
+The analysis primarily focuses on the **Closing Price** to perform statistical modeling and forecasting.
+
+---
+
+# ⚙️ Project Approach
+
+The project follows the complete Time Series Analysis workflow.
+
+### 1️⃣ Data Collection
+
+- Downloaded historical stock prices using the Yahoo Finance API (`yfinance`).
+- Imported the dataset into Google Colab for analysis.
+
+---
+
+### 2️⃣ Data Preprocessing
+
+- Cleaned missing values.
+- Selected daily closing prices.
+- Converted data into a proper time-series format.
+
+---
+
+### 3️⃣ Trend Analysis
+
+Calculated:
+
+- 50-Day Moving Average
+- 200-Day Moving Average
+
+These indicators smooth short-term fluctuations and reveal long-term market trends.
+
+---
+
+### 4️⃣ Seasonality Detection
+
+Applied **Seasonal Decomposition** to separate the stock prices into:
+
+- Trend
+- Seasonal Component
+- Residual Component
+
+---
+
+### 5️⃣ Forecasting
+
+Implemented the **ARIMA (5,1,0)** model to forecast the next **30 business days** of Apple stock prices.
+
+---
+
+### 6️⃣ Volatility Analysis
+
+Calculated:
+
+- Daily Percentage Returns
+- 30-Day Rolling Annualized Volatility
+
+This helps measure market risk and identify highly volatile trading periods.
+
+---
+
+### 7️⃣ Performance Summary
+
+Generated important financial metrics such as:
+
+- Total Return
+- Annualized Volatility
+- Maximum Daily Gain
+- Maximum Daily Loss
+
+---
+
+# 📊 Summary Performance Metrics
 
 | Metric | Value |
-| :--- | :--- |
-| **Starting Price (Jan 2023)** | $122.98 |
-| **Ending Price (Dec 2025)** | $271.36 |
-| **Total Return** | +120.65% |
-| **Annualized Volatility** | 23.81% |
-| **Max Daily Gain** | +15.33% |
-| **Max Daily Loss** | -9.25% |
+|---------|--------|
+| Starting Price (Jan 2023) | $122.98 |
+| Ending Price (Dec 2025) | $271.36 |
+| Total Return | **+120.65%** |
+| Annualized Volatility | **23.81%** |
+| Max Daily Gain | **+15.33%** |
+| Max Daily Loss | **−9.25%** |
 
 ---
+
+# 📈 Results
+
+The analysis generated several meaningful financial insights:
+
+- Successfully identified long-term stock price trends using Moving Averages.
+- Decomposed the time series into Trend, Seasonal, and Residual components.
+- Forecasted future stock prices using the ARIMA model.
+- Measured market volatility using rolling annualized volatility.
+- Visualized daily returns and return distributions.
+- Summarized key financial performance indicators for investment analysis.
+
+---
+
 # 📈 Visualizations & Analytical Breakdown
 
-Below are the key analytical charts and visual models generated during the time series analysis of Apple Inc. (AAPL) stock data:
+The project contains multiple analytical charts that explain different aspects of Apple's historical stock performance.
 
-
-
-### 1. Stock Price Trend Analysis & Moving Averages
-Image Name / File Concept: Moving Averages Trend / stock_trend_ma.png
-
-Visual Representation: (Screenshot 2026-08-02 234743.png)
-
-Description: This chart plots the daily closing stock price (light blue line) alongside a 50-Day Simple Moving Average (orange line) and a 200-Day Simple Moving Average (red line) over a multi-year period (2023–2026). It smooths out high-frequency market noise to help identify major structural momentum shifts, trend reversals, and support/resistance crossings.
-
-## 2. Time Series Decomposition
-Image Name / File Concept: Decomposition / time_series_decomposition.png
-
-Visual Representation: (Screenshot 2026-08-02 234752.png & 234845.png)
-
-Description: This multi-panel analytical graph breaks down the historical stock pricing data into its fundamental components:
-
-Observed: The raw historical stock price series.
-
-Trend: The underlying long-term progression free of seasonal and random fluctuations.
-
-Seasonal: The repeating cyclical patterns or regular periodic variations over time.
-
-Residual (Resid): The irregular, random noise or leftover variance remaining after removing trend and seasonality.
-
-
-## 3. Daily Returns & Return Distribution
-Image Name / File Concept: Returns Distribution / daily_returns_distribution.png
-
-Visual Representation: (Screenshot 2026-08-02 234917.png)
-
-Description: Presented in a dual-panel layout:
-
-Daily Percentage Returns (Left): Tracks day-over-day percentage changes, highlighting volatility spikes, market shocks, and outlier gain/loss days (such as the sharp drop/spike near early 2025).
-
-Distribution of Daily Returns (Right): Combines a frequency histogram with a Kernel Density Estimation (KDE) curve (yellow line) to inspect market skewness, kurtosis, and the concentration of typical daily price shifts around zero.
-## 4. Rolling Volatility Analysis (Annualized)
-Image Name / File Concept: Rolling Volatility / rolling_volatility.png
-
-Visual Representation: (Screenshot 2026-08-02 234929.png & 234923.png)
-
-Description: Evaluates market turbulence dynamically by calculating a 30-day sliding window of annualized standard deviation on returns. The line graph highlights calm accumulation phases alongside sharp volatility spikes (notably soaring near mid-2025), illustrating periods of heightened risk and market uncertainty.
-
-## 5. ARIMA Price Forecasting
-Image Name / File Concept: ARIMA Forecast / arima_forecast.png
-
-Visual Representation: (Screenshot 2026-08-02 234854.png & 234800.png)
-
-Description: Projects a future trajectory using autoregressive modeling. It contrasts historical closing prices (solid blue line) against a 30-business-day forward prediction path (dashed or solid green line), modeling short-term expectations based on historical lag patterns and moving average parameters.
 ---
 
-## 📂 Repository Structure
+## 1️⃣ Stock Price Trend Analysis & Moving Averages
+
+**Image:** `assets/stock_trend_ma.png`
+
+**Description**
+
+Displays the daily closing price together with the **50-Day** and **200-Day Moving Averages**, helping identify long-term market trends, trend reversals, and momentum changes.
+
+---
+
+## 2️⃣ Time Series Decomposition
+
+**Image:** `assets/time_series_decomposition.png`
+
+**Description**
+
+Breaks the stock price into four components:
+
+- Observed
+- Trend
+- Seasonal
+- Residual
+
+This helps understand the underlying structure of the time series.
+
+---
+
+## 3️⃣ Daily Returns & Return Distribution
+
+**Image:** `assets/daily_returns_distribution.png`
+
+**Description**
+
+Shows:
+
+- Daily percentage returns
+- Histogram of returns
+- Kernel Density Estimation (KDE)
+
+Useful for analyzing return distribution, volatility, and market behavior.
+
+---
+
+## 4️⃣ Rolling Volatility Analysis
+
+**Image:** `assets/rolling_volatility.png`
+
+**Description**
+
+Calculates the **30-Day Annualized Rolling Volatility** to identify periods of high and low market risk.
+
+---
+
+## 5️⃣ ARIMA Price Forecasting
+
+**Image:** `assets/arima_forecast.png`
+
+**Description**
+
+Forecasts Apple's stock price for the next **30 business days** using an ARIMA model and compares historical prices with predicted values.
+
+---
+
+# 🛠 Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Statsmodels
+- yfinance
+- Google Colab
+
+---
+
+# 📂 Repository Structure
 
 ```text
-├── assets/                                            # Directory for output graphs & visual exports
-├── stock-market-analysis-prediction-using-lstm.ipynb  # Core LSTM & Time Series Notebook
-├── Task7nayan.ipynb                                   # Primary Analysis & Visualization Script
-└── README.md                                          # Project Documentation
+📦 Stock-Price-Time-Series-Analysis
+│
+├── assets/
+│   ├── stock_trend_ma.png
+│   ├── time_series_decomposition.png
+│   ├── daily_returns_distribution.png
+│   ├── rolling_volatility.png
+│   ├── arima_forecast.png
+│   └── summary_metrics.png
+│
+├── stock-market-analysis-prediction-using-lstm.ipynb
+├── Task7nayan.ipynb
+├── requirements.txt
+└── README.md
+```
+
+---
+
+# 🎯 Key Learning Outcomes
+
+- Time Series Analysis
+- Financial Data Analytics
+- Moving Average Analysis
+- Seasonal Decomposition
+- ARIMA Forecasting
+- Stock Market Trend Analysis
+- Volatility Measurement
+- Data Visualization
+- Predictive Analytics
+- Python for Financial Modeling
+
+---
+
+# 🔮 Future Enhancements
+
+- Implement LSTM Deep Learning models for forecasting.
+- Compare ARIMA with Facebook Prophet and XGBoost.
+- Perform Hyperparameter tuning using Auto-ARIMA.
+- Develop an interactive dashboard using Streamlit or Power BI.
+- Extend the analysis to multiple stocks for comparative insights.
+
+---
+
+# 📌 Conclusion
+
+This project demonstrates how **Time Series Analysis** can transform historical stock market data into actionable financial insights. By combining trend analysis, seasonal decomposition, volatility measurement, and ARIMA forecasting, the project provides a structured framework for understanding stock price behavior and supporting informed investment decisions. It also strengthened practical skills in **Python, Financial Analytics, Statistical Modeling, and Data Visualization**.
+
+---
+
+# 👨‍💻 Author
+
+**Nayan Maity**
+
+Aspiring Data Analyst | Python Developer | Machine Learning Enthusiast
+
+📧 Email: *your-email@example.com*
+
+🔗 LinkedIn: *https://www.linkedin.com/in/your-profile/*
+
+---
+
+⭐ **If you found this project useful, consider giving it a Star!**
