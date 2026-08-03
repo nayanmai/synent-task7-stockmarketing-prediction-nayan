@@ -51,14 +51,13 @@ The objective of this project is to perform comprehensive time series analysis o
 
 # 📊 Dataset Details
 
-**Dataset Source:** Yahoo Finance
+**Dataset Source:** Kaggle
 
-**API Used:** `yfinance`
+**Dataset Name:** Apple Stock Price Dataset (AAPL)
 
-**Company:** Apple Inc. (AAPL)
+**Platform:** Kaggle
 
 **Time Period:**
-
 - Start Date: January 2023
 - End Date: January 2026
 
@@ -72,8 +71,7 @@ The objective of this project is to perform comprehensive time series analysis o
 - Adjusted Close
 - Volume
 
-The analysis primarily focuses on the **Closing Price** to perform statistical modeling and forecasting.
-
+The analysis primarily focuses on the **Closing Price** to perform trend analysis, volatility analysis, seasonality decomposition, and stock price forecasting using the ARIMA model.
 ---
 
 # ⚙️ Project Approach
@@ -309,9 +307,9 @@ This project demonstrates how **Time Series Analysis** can transform historical 
 
 Aspiring Data Analyst | Python Developer | Machine Learning Enthusiast
 
-📧 Email: *your-email@example.com*
+📧 Email: *maity2nayan@gmail.com*
 
-🔗 LinkedIn: *https://www.linkedin.com/in/your-profile/*
+🔗 LinkedIn: *linkedin.com/in/nayan-maity-it-workers*
 
 ---
 
